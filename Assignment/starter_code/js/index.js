@@ -15,9 +15,10 @@ $(document).ready(function(){
     // Great job using .fadeOut and .fadeIn for the readmore and readless elements! It looks awesome, and it's great that you're exploring other jQuery methods.
 
     $(".readless").click(function(){
-        $("#show-this-on-click").slideUp("slow", function () {
-        	$(".readmore").fadeIn("slow");
+        $("#show-this-on-click").slideUp("slow", function() {
+          $(".readmore").fadeIn("slow");
         });
+        // You don't necessarily need to put this code inside of the slideUp method, but it totally works if you want to!
         $(".readless").fadeOut("slow");
     });
 
